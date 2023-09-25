@@ -9,7 +9,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<HomeContainer/>} />
-                <Route path="/book/:bookTitle" element={<BooksContainer/>} />
+                <Route path="/book/:id" element={<BooksContainer/>} />
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </Router>

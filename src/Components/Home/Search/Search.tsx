@@ -2,16 +2,20 @@ import { useEffect } from "react"
 import { useState } from "react"
 import { connect } from "react-redux"
 import useDebounce from "../../../Hooks/useDebounce"
-import { getBooks } from "../../../Redux/commonReducer"
+import { getBooks, setCurrentPage } from "../../../Redux/commonReducer"
+import { RootState } from "../../../Redux/reduxStore"
 import { getDataFromLC } from "../../../Utils/saveSearchToLC"
 import classes from "./Search.module.css"
 
 interface IProps {
-    getBooks: (searchValue: string) => void
+    getBooks: (searchValue: string, page: number, pageSize: number) => void
+    setCurrentPage: (currentPage: number) => void
+    currentPage: number,
+    pageSize: number
 }
 
 const Search = (props: IProps) => {
-    const { getBooks } = props
+    const { getBooks, setCurrentPage, currentPage, pageSize } = props
 
     const [value, setValue] = useState("")
 
@@ -23,14 +27,18 @@ const Search = (props: IProps) => {
 
     useEffect(() => {
         if (debouncedSearchTerm) {
-           getBooks(value)
+            getBooks(value, currentPage, pageSize)
         }
-    }, [debouncedSearchTerm])
+    }, [debouncedSearchTerm, currentPage])
 
     useEffect(() => {
         if (value.length === 0 && debouncedSearchTerm) {
-           getBooks("") 
+           getBooks("", 1, pageSize) 
         }
+    }, [value])
+
+    useEffect(() => {
+        setCurrentPage(0)
     }, [value])
 
     useEffect(() => {
@@ -47,6 +55,12 @@ const Search = (props: IProps) => {
     )
 }
 
-export default connect(null, {
-    getBooks
+let mapStateToProps = (state: RootState) => ({
+    currentPage: state.common.currentPage,
+    pageSize: state.common.pageSize
+})
+
+export default connect(mapStateToProps, {
+    getBooks,
+    setCurrentPage
 })(Search)

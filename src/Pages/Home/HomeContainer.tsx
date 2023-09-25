@@ -1,8 +1,7 @@
-import { useState } from "react"
 import { useEffect } from "react"
 import { connect } from "react-redux"
 import Preloader from "../../Components/UI/Preloader/Preloader"
-import { setBooksData } from "../../Redux/commonReducer"
+import { setBooksData, setCurrentPage } from "../../Redux/commonReducer"
 import { RootState } from "../../Redux/reduxStore"
 import { getDataFromLC } from "../../Utils/saveSearchToLC"
 import { IBook } from "../../Utils/types"
@@ -11,25 +10,31 @@ import Home from "./Home"
 interface IProps {
     books: IBook[]
     isFetching: boolean
+    currentPage: number
+    pageSize: number
+    total: number
     setBooksData: (books: IBook[]) => void
+    setCurrentPage: (page: number) => void
 }
 
 const HomeContainer = (props: IProps) => {
-    const { books, isFetching, setBooksData } = props
+    const {
+        books,
+        isFetching,
+        currentPage,
+        pageSize,
+        total,
+        setBooksData,
+        setCurrentPage
+    } = props
 
-    const itemsPerPage = 5
-
-    const [currentPage, setCurrentPage] = useState<number>(1)
-    const totalPages = Math.ceil(books.length / itemsPerPage)
-
-    const [paginatedBooks, setPaginatedBooks] = useState<IBook[]>([])
+    const totalPages = Math.ceil(total / pageSize)
 
     const handlePageChange = (newPage: number) => {
-        if (newPage >= 1 && newPage <= totalPages) {
-          setCurrentPage(newPage);
+        if (newPage >= 0 && newPage <= totalPages) {
+            setCurrentPage(newPage)
         }
-    };
-
+    }
 
     useEffect(() => {
         const dataFromLC = getDataFromLC()
@@ -42,19 +47,11 @@ const HomeContainer = (props: IProps) => {
         }
     }, [])
 
-    useEffect(() => {
-        const paginatedBooks = books.slice(
-            (currentPage - 1) * itemsPerPage,
-            currentPage * itemsPerPage
-        );
-        setPaginatedBooks(paginatedBooks)
-    }, [books, currentPage])
-
     return (
         <>
-            {isFetching && <Preloader/>}
+            {isFetching && <Preloader />}
             <Home
-                books={paginatedBooks}
+                books={books}
                 handlePageChange={handlePageChange}
                 currentPage={currentPage}
                 totalPages={totalPages}
@@ -65,9 +62,13 @@ const HomeContainer = (props: IProps) => {
 
 let mapStateToProps = (state: RootState) => ({
     books: state.common.books,
-    isFetching: state.common.isFetching
+    isFetching: state.common.isFetching,
+    currentPage: state.common.currentPage,
+    pageSize: state.common.pageSize,
+    total: state.common.total
 })
 
 export default connect(mapStateToProps, {
-    setBooksData
+    setBooksData,
+    setCurrentPage
 })(HomeContainer)

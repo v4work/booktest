@@ -12,7 +12,7 @@ const BookItem = (props: IProps) => {
     const navigate = useNavigate()
 
     const onClick = () => {
-        navigate(`/book/${book.title}`)
+        navigate(`/book/${book.id}`)
     }
     
     return (

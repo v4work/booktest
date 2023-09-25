@@ -19,7 +19,7 @@ const BooksList = (props: IProps) => {
             {books.length > 0 && (
                 <div className={classes.items}>
                     {books.map(el => (
-                        <BookItem book={el} key={el.title}/>
+                        <BookItem book={el} key={el.id}/>
                     ))}
                 </div>
             )}
