@@ -1,0 +1,28 @@
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition-duration: .3s;
+    cursor: pointer;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.main:hover {
+    background-color: aliceblue;
+}
+.main img {
+    width: 100px;
+    object-fit: cover;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media screen and (max-width: 568px) {
+    .main img {
+        width: 50px;
+    }
+}

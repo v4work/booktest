@@ -1,0 +1,179 @@
+[
+    {
+      "title": "The Lord Of The Rings",
+      "author": "J.R.R. Tolkien",
+      "img": "https://www.foliosociety.com/media/catalog/product/l/t/ltr_book.png?quality=80&fit=bounds&height=&width=&canvas=:",
+      "date": "29/07/1954",
+      "description": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind the\n\nIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins.\n\nFrom Sauron's fastness in the Dark Tower of Mordor, his power spread far and wide. Sauron gathered all the Great Rings, but always he searched for the One Ring that would complete his dominion.\n\nWhen Bilbo reached his eleventy-first birthday he disappeared, bequeathing to his young cousin Frodo the Ruling Ring and a perilous quest: to journey across Middle-earth, deep into the shadow of the Dark Lord, and destroy the Ring by casting it into the Cracks of Doom.\n\nThe Lord of the Rings tells of the great quest undertaken by Frodo and the Fellowship of the Ring: Gandalf the Wizard; the hobbits Merry, Pippin, and Sam; Gimli the Dwarf; Legolas the Elf; Boromir of Gondor; and a tall, mysterious stranger called Strider."
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "img": "https://m.media-amazon.com/images/M/MV5BNmVmYzcwNzMtMWM1NS00MWIyLThlMDEtYzUwZDgzODE1NmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
+      "date": "22/09/1960",
+      "description": "This novel explores themes of racial injustice and moral growth in the American South through the eyes of young Scout Finch."
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "img": "https://abuk-public.s3.amazonaws.com/uploads/book/picture/438/small_1984_800.png",
+      "date": "22/09/1949",
+      "description": "A dystopian masterpiece depicting a totalitarian society where the government controls every aspect of citizens' lives."
+    },
+    {
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/1813",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "description": "A timeless love story featuring the headstrong Elizabeth Bennet and the enigmatic Mr. Darcy set in Regency-era England."
+    },
+    {
+      "title": "Book 5",
+      "author": "Author 5",
+      "img": "https://pngimg.com/uploads/book/small/book_PNG2118.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 5"
+    },
+    {
+      "img": "https://clipart-library.com/images/6Tpo6G8TE.jpg",
+      "date": "22/09/1925",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "A portrayal of the decadence and disillusionment of the Jazz Age, narrated by Nick Carraway and featuring the mysterious Jay Gatsby."
+    },
+    {
+      "img": "https://clipart-library.com/images/6Tpo6G8TE.jpg",
+      "date": "22/09/1851",
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "description": "An epic adventure of Captain Ahab's obsessive quest for the white whale, Moby-Dick, exploring themes of revenge and obsession."
+    },
+    {
+      "img": "https://clipart-library.com/images/6Tpo6G8TE.jpg",
+      "date": "22/09/1951",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "description": "A coming-of-age novel following Holden Caulfield's experiences in New York City as he grapples with adolescence and alienation."
+    },
+    {
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/1932",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "published": "1932",
+      "description": "Set in a dystopian future, this novel explores a society built on technology, consumerism, and the suppression of individuality."
+    },
+    {
+      "title": "Book 10",
+      "author": "Author 10",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 10"
+    },
+    {
+      "title": "Book 11",
+      "author": "Author 11",
+      "img": "https://pngimg.com/uploads/book/small/book_PNG2118.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 11"
+    },
+    {
+      "title": "Book 12",
+      "author": "Author 12",
+      "img": "https://pngimg.com/uploads/book/small/book_PNG2118.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 12"
+    },
+    {
+      "title": "Book 13",
+      "author": "Author 13",
+      "img": "https://pngimg.com/uploads/book/small/book_PNG2118.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 13"
+    },
+    {
+      "title": "Book 14",
+      "author": "Author 14",
+      "img": "https://pngimg.com/uploads/book/small/book_PNG2118.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 14"
+    },
+    {
+      "title": "Book 15",
+      "author": "Author 15",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 15"
+    },
+    {
+      "title": "Book 16",
+      "author": "Author 16",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 16"
+    },
+    {
+      "title": "Book 17",
+      "author": "Author 17",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 17"
+    },
+    {
+      "title": "Book 18",
+      "author": "Author 18",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 18"
+    },
+    {
+      "title": "Book 19",
+      "author": "Author 19",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 19"
+    },
+    {
+      "title": "Book 20",
+      "author": "Author 20",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 20"
+    },
+    {
+      "title": "Book 21",
+      "author": "Author 21",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 21"
+    },
+    {
+      "title": "Book 22",
+      "author": "Author 22",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 22"
+    },
+    {
+      "title": "Book 23",
+      "author": "Author 23",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 23"
+    },
+    {
+      "title": "Book 24",
+      "author": "Author 24",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 24"
+    },
+    {
+      "title": "Book 25",
+      "author": "Author 25",
+      "img": "https://pngimg.com/d/book_PNG2111.png",
+      "date": "22/09/2023",
+      "description": "Description of Book 25"
+    }
+]
+  

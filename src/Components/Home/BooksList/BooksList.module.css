@@ -1,0 +1,38 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.items {
+    width: 100%;
+    /* max-height: 70vh; */
+    height: 70vh;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+.notFound {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    gap: 1rem;
+}
+.notFound p {
+    font-size: 24px;
+}
+.notFound svg {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 568px) {
+    .items {
+        height: 60vh;
+    }
+    .notFound {
+        height: 50vh
+    }
+}
